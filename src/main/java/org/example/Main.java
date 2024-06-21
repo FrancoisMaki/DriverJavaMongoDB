@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 public class Main {
     public static void main(String[] args) {
         // Connection to your MongoDB Atlas
-        String connectionString = "mongodb+srv://<USER>:<PASSWORD>@cluster0.grs5rca.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+        String connectionString = "<YOUR URL>";
 
         try (MongoClient mongoClient = MongoClients.create(new ConnectionString(connectionString))) {
             MongoDatabase database = mongoClient.getDatabase("<DATABASE>"); // replace with your database name
